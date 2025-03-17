@@ -37,7 +37,7 @@ or
 yarn dev
 ```
 
-# Deployment
+## Deployment
 
 ### To make a build:
 #### 1. For production:
