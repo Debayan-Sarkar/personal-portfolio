@@ -37,6 +37,16 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
    ```bash
    yarn dev
 
-2. Install The Dependencies:
+3. Install The Dependencies:
    ``` bash
    npm install
+# Deployment
+
+ ## To make build:
+  1. For production:
+   ``` bash
+   yarn build
+
+  2. For Preview:
+   ``` bash
+   yarn preview
