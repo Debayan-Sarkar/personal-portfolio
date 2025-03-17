@@ -18,3 +18,7 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
    ```bash
    git clone https://github.com/Debayan-Sarkar/personal-portfolio.git
    cd personal-portfolio
+
+2. Install The Dependencies:
+``` bash
+   npm install
