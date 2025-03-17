@@ -19,6 +19,24 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
    git clone https://github.com/Debayan-Sarkar/personal-portfolio.git
    cd personal-portfolio
 
+2. Install The Dependencies Using Yarn or Npm:
+   ``` bash
+   npm install
+      
+       or
+
+    ```bash 
+    yarn
+
+3. Start The Development Server:
+   ``` bash
+   npm run dev 
+
+       or 
+
+   ```bash
+   yarn dev
+
 2. Install The Dependencies:
    ``` bash
    npm install
