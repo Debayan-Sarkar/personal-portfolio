@@ -20,5 +20,5 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
    cd personal-portfolio
 
 2. Install The Dependencies:
-``` bash
+   ``` bash
    npm install
