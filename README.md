@@ -20,33 +20,40 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
    cd personal-portfolio
 
 2. Install The Dependencies Using Yarn or Npm:
+ For Npm:
    ``` bash
    npm install
       
-       or
-
+ For Yarn:
     ```bash 
     yarn
 
 3. Start The Development Server:
+ For Npm:
    ``` bash
    npm run dev 
-
-       or 
-
+ 
+ For Yarn:
    ```bash
    yarn dev
 
-3. Install The Dependencies:
-   ``` bash
-   npm install
+
+
 # Deployment
 
  ## To make build:
   1. For production:
+ For Npm:
+   ``` bash
+   npm build
+ For Yarn:
    ``` bash
    yarn build
 
   2. For Preview:
+ For Npm:
    ``` bash
+   npm preview
+ For Yarn:
+     ``` bash
    yarn preview
