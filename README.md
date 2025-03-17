@@ -39,14 +39,13 @@ yarn dev
 
 # Deployment
 
-## To make a build:
-### 1. For production:
+### To make a build:
+#### 1. For production:
 ```bash
 yarn build
 ```
 
-### 2. For preview:
+#### 2. For preview:
 ```bash
 yarn preview
-```
 ```
