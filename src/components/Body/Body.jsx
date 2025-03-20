@@ -336,7 +336,7 @@ const Body = () => {
           </div>
           <div className="flex flex-col w-[50%] gap-3 items-start justify-start">
             <input type="text" placeholder='Name' className='p-4 bg-[#f0f8ff] outline-0 w-full' />
-            <input type="email" placeholder='Email' className='p-4 bg-[#f0f8ff] outline-0 w-full '/>
+            <input type="email" placeholder='Email' className='p-4 bg-[#f0f8ff] outline-0 w-full ' />
             <button className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Submit</button>
           </div>
         </div>
