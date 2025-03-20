@@ -365,7 +365,12 @@ const Body = () => {
           // install Swiper modules
           modules={[ Thumbs, Grid]}
           spaceBetween={50}
-          slidesPerView={1}
+          breakpoints={{
+            320: { slidesPerView: 1 }, // Mobile
+            640: { slidesPerView: 2 }, // Tablets
+            1024: { slidesPerView: 3 }, // Small laptops
+            1280: { slidesPerView: 4 }, // Large screens
+          }}
           grid={{
             rows: 1,
           }}
