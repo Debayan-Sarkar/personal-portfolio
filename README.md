@@ -4,9 +4,9 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
 
 ## Features  
 ✅ Fully responsive design  
-<!-- ✅ Dark mode support   -->
 ✅ Interactive animations  
 ✅ Optimized for performance  
+<!-- ✅ Dark mode support   -->
 
 ## Tech Stack  
 - ⚛️ **React.js** – Frontend framework  
