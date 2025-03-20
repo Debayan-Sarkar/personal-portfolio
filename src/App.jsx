@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Body />
+        <div className="overflow-x-hidden w-full">
+          <Header />
+          <Body />
+        </div>
       </BrowserRouter>
     </>
   )

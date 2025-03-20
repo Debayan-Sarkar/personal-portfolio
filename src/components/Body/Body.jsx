@@ -1,10 +1,20 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const Body = () => {
   return (
     <>
 
-      <section className="w-full">
+      <motion.section
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          type: 'spring',
+          stiffness: 100,
+          delay: 0.2,
+          damping: 20,
+        }}
+        className="w-full">
         <div className="flex justify-between flex-row-reverse items-center pt-[42px] pb-[42px] pr-[24px] pl-[24px] max-md:!flex-col ">
           <div className="flex w-full">
             <img src="/1.png" alt="" />
@@ -16,42 +26,123 @@ const Body = () => {
             <button className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Contact</button>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <section className="w-full">
         <div className="flex justify-between items-start gap-11 pt-[64px] pb-[64px] pr-[24px] pl-[24px] max-md:justify-center max-md:items-center max-md:flex-col">
           <div className="flex w-full justify-start max-md:justify-center max-md:items-center">
-            <img src="/2.png" alt="" className='w-[200px]' />
+            <motion.img
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.3,
+              damping: 20,
+            }}
+            src="/2.png" alt="" className='w-[200px]' />
           </div>
           <div className="flex flex-col gap-10 items-center justify-center">
-            <h2 className='text-xl font-semibold epilogue text-center'>Branding | Image Making</h2>
-            <h1 className="text-7xl w-full text-center font-semibold epilogue">Visual Designer</h1>
-            <p className="text-sm epilogue w-full text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed molestiae vero explicabo, expedita aspernatur tenetur asperiores quis necessitatibus cum, rerum quae quod sit? Consequuntur quo officiis vel sequi, mollitia consequatur.</p>
-            <button className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Contact</button>
+            <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.4,
+              damping: 10,
+            }}
+            className='text-xl font-semibold epilogue text-center'>Branding | Image Making</motion.h2>
+            <motion.h1 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.5,
+              damping: 10,
+            }}
+            className="text-7xl w-full text-center font-semibold epilogue">Visual Designer</motion.h1>
+            <motion.p 
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.6,
+              damping: 10,
+            }}
+            className="text-sm epilogue w-full text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed molestiae vero explicabo, expedita aspernatur tenetur asperiores quis necessitatibus cum, rerum quae quod sit? Consequuntur quo officiis vel sequi, mollitia consequatur.</motion.p>
+            <motion.button
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.7,
+              damping: 10,
+            }}
+            className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Contact</motion.button>
           </div>
           <div className="flex w-full justify-end max-md:justify-center max-md:items-center">
-            <img src="/3.png" alt="" className='w-[200px]' />
+            <motion.img
+             initial={{ opacity: 0, y: -100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.8,
+               damping: 10,
+             }}
+            src="/3.png" alt="" className='w-[200px]' />
           </div>
         </div>
       </section>
       <section className="w-full">
         <div className="flex justify-between items-center pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
           <div className="flex gap-7 max-md:justify-center max-md:flex-col">
-            <div className="flex justify-center items-center gap-2 flex-col">
+            <motion.div
+             initial={{ opacity: 0, x: -100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.9,
+               damping: 20,
+             }}
+            className="flex justify-center items-center gap-2 flex-col">
               <img src="/4.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </div>
-            <div className="flex justify-center items-center gap-2 flex-col">
+            </motion.div>
+            <motion.div
+             initial={{ opacity: 0, x: 100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.10,
+               damping: 20,
+             }}
+            className="flex justify-center items-center gap-2 flex-col">
               <img src="/5.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </div>
-            <div className="flex justify-center items-center gap-2 flex-col">
+            </motion.div>
+            <motion.div
+             initial={{ opacity: 0, x: -100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.11,
+               damping: 20,
+             }}
+            className="flex justify-center items-center gap-2 flex-col">
               <img src="/6.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -59,84 +150,184 @@ const Body = () => {
       <section className="w-full">
         <div className="w-full grid grid-cols-2 max-md:grid-cols-1 gap-10 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
 
-          <div className="flex justify-center items-center gap-5 w-full">
+          <motion.div
+           initial={{ opacity: 0, y: -100 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             type: 'spring',
+             stiffness: 100,
+             delay: 0.12,
+             damping: 20,
+           }}
+          className="flex justify-center items-center gap-5 w-full">
             <img src="/4.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full">
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            type: 'spring',
+            stiffness: 100,
+            delay: 0.13,
+            damping: 20,
+          }}
+          className="flex justify-center items-center gap-5 w-full">
             <img src="/5.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
 
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full">
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: -100 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             type: 'spring',
+             stiffness: 100,
+             delay: 0.14,
+             damping: 20,
+           }}
+          className="flex justify-center items-center gap-5 w-full">
             <img src="/8.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full">
+          </motion.div>
+          <motion.div 
+          
+          initial={{ opacity: 0, y: -100 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             type: 'spring',
+             stiffness: 100,
+             delay: 0.15,
+             damping: 20,
+           }}
+          className="flex justify-center items-center gap-5 w-full">
             <img src="/9.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       <section className="w-full">
-        <h1 className="text-center text-4xl font-semibold pt-[42px] pb-[42px] pr-[24px] pl-[24px]">Latest Work</h1>
+        <motion.h1
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: 'spring',
+          stiffness: 100,
+          delay: 0.16,
+          damping: 20,
+        }}
+        className="text-center text-4xl font-semibold pt-[42px] pb-[42px] pr-[24px] pl-[24px]">Latest Work</motion.h1>
         <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-10 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            type: 'spring',
+            stiffness: 100,
+            delay: 0.17,
+            damping: 10,
+          }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/10.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          </motion.div>
+          <motion.div
+             initial={{ opacity: 0, x: 100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.18,
+               damping: 10,
+             }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/11.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
 
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          </motion.div>
+          <motion.div
+             initial={{ opacity: 0, x: -100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.19,
+               damping: 10,
+             }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/12.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          </motion.div>
+          <motion.div
+             initial={{ opacity: 0, x: 100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.20,
+               damping: 10,
+             }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/13.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          </motion.div>
+          <motion.div
+             initial={{ opacity: 0, x: -100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.21,
+               damping: 10,
+             }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/14.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
-          <div className="flex justify-center items-center gap-5 w-full flex-col">
+          </motion.div>
+          <motion.div
+             initial={{ opacity: 0, x: 100 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             transition={{
+               type: 'spring',
+               stiffness: 100,
+               delay: 0.22,
+               damping: 10,
+             }}
+          className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/15.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
