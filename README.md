@@ -11,7 +11,7 @@ A modern, responsive portfolio website built using **React** and **Tailwind CSS*
 ## Tech Stack  
 - ⚛️ **React.js** – Frontend framework  
 - 🎨 **Tailwind CSS** – Styling  
-- 🔥 **Framer Motion** (Optional) – Animations  
+- 🔥 **Framer Motion** – Animations  
 
 ## Getting Started  
 1. Clone the repo:  
