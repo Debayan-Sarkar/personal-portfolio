@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import { A11y, Grid, Navigation, Pagination, Scrollbar, Thumbs } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const Body = () => {
   return (
@@ -32,69 +34,69 @@ const Body = () => {
         <div className="flex justify-between items-start gap-11 pt-[64px] pb-[64px] pr-[24px] pl-[24px] max-md:justify-center max-md:items-center max-md:flex-col">
           <div className="flex w-full justify-start max-md:justify-center max-md:items-center">
             <motion.img
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 100,
-              delay: 0.3,
-              damping: 20,
-            }}
-            src="/2.png" alt="" className='w-[200px]' />
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.3,
+                damping: 20,
+              }}
+              src="/2.png" alt="" className='w-[200px]' />
           </div>
           <div className="flex flex-col gap-10 items-center justify-center">
             <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 100,
-              delay: 0.4,
-              damping: 10,
-            }}
-            className='text-xl font-semibold epilogue text-center'>Branding | Image Making</motion.h2>
-            <motion.h1 
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 100,
-              delay: 0.5,
-              damping: 10,
-            }}
-            className="text-7xl w-full text-center font-semibold epilogue">Visual Designer</motion.h1>
-            <motion.p 
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 100,
-              delay: 0.6,
-              damping: 10,
-            }}
-            className="text-sm epilogue w-full text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed molestiae vero explicabo, expedita aspernatur tenetur asperiores quis necessitatibus cum, rerum quae quod sit? Consequuntur quo officiis vel sequi, mollitia consequatur.</motion.p>
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.4,
+                damping: 10,
+              }}
+              className='text-xl font-semibold epilogue text-center'>Branding | Image Making</motion.h2>
+            <motion.h1
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.5,
+                damping: 10,
+              }}
+              className="text-7xl w-full text-center font-semibold epilogue">Visual Designer</motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.6,
+                damping: 10,
+              }}
+              className="text-sm epilogue w-full text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed molestiae vero explicabo, expedita aspernatur tenetur asperiores quis necessitatibus cum, rerum quae quod sit? Consequuntur quo officiis vel sequi, mollitia consequatur.</motion.p>
             <motion.button
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              type: 'spring',
-              stiffness: 100,
-              delay: 0.7,
-              damping: 10,
-            }}
-            className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Contact</motion.button>
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.7,
+                damping: 10,
+              }}
+              className="bg-[#2D2D2D] cursor-pointer text-white p-4 w-[150px] h-[55px]  flex items-center justify-center">Contact</motion.button>
           </div>
           <div className="flex w-full justify-end max-md:justify-center max-md:items-center">
             <motion.img
-             initial={{ opacity: 0, y: -100 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.8,
-               damping: 10,
-             }}
-            src="/3.png" alt="" className='w-[200px]' />
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.8,
+                damping: 10,
+              }}
+              src="/3.png" alt="" className='w-[200px]' />
           </div>
         </div>
       </section>
@@ -102,43 +104,43 @@ const Body = () => {
         <div className="flex justify-between items-center pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
           <div className="flex gap-7 max-md:justify-center max-md:flex-col">
             <motion.div
-             initial={{ opacity: 0, x: -100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.9,
-               damping: 20,
-             }}
-            className="flex justify-center items-center gap-2 flex-col">
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.9,
+                damping: 20,
+              }}
+              className="flex justify-center items-center gap-2 flex-col">
               <img src="/4.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </motion.div>
             <motion.div
-             initial={{ opacity: 0, x: 100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.10,
-               damping: 20,
-             }}
-            className="flex justify-center items-center gap-2 flex-col">
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.10,
+                damping: 20,
+              }}
+              className="flex justify-center items-center gap-2 flex-col">
               <img src="/5.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </motion.div>
             <motion.div
-             initial={{ opacity: 0, x: -100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.11,
-               damping: 20,
-             }}
-            className="flex justify-center items-center gap-2 flex-col">
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 100,
+                delay: 0.11,
+                damping: 20,
+              }}
+              className="flex justify-center items-center gap-2 flex-col">
               <img src="/6.png" alt="" className='w-30 mb-2.5' />
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-center text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
@@ -151,15 +153,15 @@ const Body = () => {
         <div className="w-full grid grid-cols-2 max-md:grid-cols-1 gap-10 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
 
           <motion.div
-           initial={{ opacity: 0, y: -100 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{
-             type: 'spring',
-             stiffness: 100,
-             delay: 0.12,
-             damping: 20,
-           }}
-          className="flex justify-center items-center gap-5 w-full">
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.12,
+              damping: 20,
+            }}
+            className="flex justify-center items-center gap-5 w-full">
             <img src="/4.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
@@ -167,15 +169,15 @@ const Body = () => {
             </div>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            type: 'spring',
-            stiffness: 100,
-            delay: 0.13,
-            damping: 20,
-          }}
-          className="flex justify-center items-center gap-5 w-full">
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.13,
+              damping: 20,
+            }}
+            className="flex justify-center items-center gap-5 w-full">
             <img src="/5.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
@@ -184,32 +186,32 @@ const Body = () => {
 
           </motion.div>
           <motion.div
-          initial={{ opacity: 0, y: -100 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{
-             type: 'spring',
-             stiffness: 100,
-             delay: 0.14,
-             damping: 20,
-           }}
-          className="flex justify-center items-center gap-5 w-full">
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.14,
+              damping: 20,
+            }}
+            className="flex justify-center items-center gap-5 w-full">
             <img src="/8.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
               <p className="text-sm text-gray-500">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
             </div>
           </motion.div>
-          <motion.div 
-          
-          initial={{ opacity: 0, y: -100 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{
-             type: 'spring',
-             stiffness: 100,
-             delay: 0.15,
-             damping: 20,
-           }}
-          className="flex justify-center items-center gap-5 w-full">
+          <motion.div
+
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.15,
+              damping: 20,
+            }}
+            className="flex justify-center items-center gap-5 w-full">
             <img src="/9.png" alt="" className='w-30 mb-2.5' />
             <div className="flex flex-col items-start justify-center gap-4">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
@@ -221,26 +223,26 @@ const Body = () => {
 
       <section className="w-full">
         <motion.h1
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          type: 'spring',
-          stiffness: 100,
-          delay: 0.16,
-          damping: 20,
-        }}
-        className="text-center text-4xl font-semibold pt-[42px] pb-[42px] pr-[24px] pl-[24px]">Latest Work</motion.h1>
-        <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-10 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
-          <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
             type: 'spring',
             stiffness: 100,
-            delay: 0.17,
-            damping: 10,
+            delay: 0.16,
+            damping: 20,
           }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+          className="text-center text-4xl font-semibold pt-[42px] pb-[42px] pr-[24px] pl-[24px]">Latest Work</motion.h1>
+        <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-10 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.17,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/10.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Product Design</h2>
@@ -248,15 +250,15 @@ const Body = () => {
             </div>
           </motion.div>
           <motion.div
-             initial={{ opacity: 0, x: 100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.18,
-               damping: 10,
-             }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.18,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/11.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Visual Design</h2>
@@ -265,15 +267,15 @@ const Body = () => {
 
           </motion.div>
           <motion.div
-             initial={{ opacity: 0, x: -100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.19,
-               damping: 10,
-             }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.19,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/12.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
@@ -281,15 +283,15 @@ const Body = () => {
             </div>
           </motion.div>
           <motion.div
-             initial={{ opacity: 0, x: 100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.20,
-               damping: 10,
-             }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.20,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/13.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
@@ -297,15 +299,15 @@ const Body = () => {
             </div>
           </motion.div>
           <motion.div
-             initial={{ opacity: 0, x: -100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.21,
-               damping: 10,
-             }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.21,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/14.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
@@ -313,15 +315,15 @@ const Body = () => {
             </div>
           </motion.div>
           <motion.div
-             initial={{ opacity: 0, x: 100 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             transition={{
-               type: 'spring',
-               stiffness: 100,
-               delay: 0.22,
-               damping: 10,
-             }}
-          className="flex justify-center items-center gap-5 w-full flex-col">
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              delay: 0.22,
+              damping: 10,
+            }}
+            className="flex justify-center items-center gap-5 w-full flex-col">
             <img src="/15.jpeg" alt="" className='w-full' />
             <div className="flex items-start justify-center gap-2 flex-col">
               <h2 className="text-xl text-black font-semibold">Art Direction</h2>
@@ -359,141 +361,168 @@ const Body = () => {
 
       <section className="w-full">
         <h1 className="text-center text-4xl font-semibold pt-[42px]  pr-[24px] pl-[24px]">Testimonial</h1>
-        <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-6 pt-[42px] pb-[42px] pr-[24px] pl-[24px] ">
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+        <Swiper
+          // install Swiper modules
+          modules={[ Thumbs, Grid]}
+          spaceBetween={50}
+          slidesPerView={1}
+          grid={{
+            rows: 1,
+          }}
+          
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+          className="pt-[42px] pb-[42px] pr-[24px] pl-[24px] "
+        >
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+          </SwiperSlide>
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+          </SwiperSlide>
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+          </SwiperSlide>
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+          </SwiperSlide>
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex justify-between gap-7 shadow-2xl w-full flex-col p-4 bg-[#f0f8ff]">
-            <h2 className="text-md font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
-            </h2>
-            <div className="flex items-start justify-start gap-2 ">
-              <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
+          </SwiperSlide>
+          <SwiperSlide className=" !p-4">
+            <div className="flex justify-between gap-7 rounded-2xl shadow-2xl w-full flex-col p-4 bg-[#f0f8ff] ">
+              <h2 className="text-md font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolorem eos consequatur voluptatum doloribus veniam itaque similique quaerat sed fugit. Ducimus architecto inventore odit quo, doloribus esse repudiandae quibusdam aliquam.
+              </h2>
+              <div className="flex items-start justify-start gap-2 ">
+                <img src="/16.png" alt="" className='w-14 rounded-full border border-[#f0f8ff]' />
 
-              <div className="flex flex-col gap-2.5">
-                <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
-                  <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
-                  <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
-                </svg>
-                <div>
-                  <p className="text-md">Gemma Nolen</p>
-                  <p className="text-sm text-gray-500">Google</p>
+                <div className="flex flex-col gap-2.5">
+                  <svg width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.10326 1.81699C9.47008 1.07374 10.5299 1.07374 10.8967 1.81699L12.7063 5.48347C12.8519 5.77862 13.1335 5.98319 13.4592 6.03051L17.5054 6.61846C18.3256 6.73765 18.6531 7.74562 18.0596 8.32416L15.1318 11.1781C14.8961 11.4079 14.7885 11.7389 14.8442 12.0632L15.5353 16.0931C15.6754 16.91 14.818 17.533 14.0844 17.1473L10.4653 15.2446C10.174 15.0915 9.82598 15.0915 9.53466 15.2446L5.91562 17.1473C5.18199 17.533 4.32456 16.91 4.46467 16.0931L5.15585 12.0632C5.21148 11.7389 5.10393 11.4079 4.86825 11.1781L1.94038 8.32416C1.34687 7.74562 1.67438 6.73765 2.4946 6.61846L6.54081 6.03051C6.86652 5.98319 7.14808 5.77862 7.29374 5.48347L9.10326 1.81699Z" fill="#2D2D2D" />
+                    <path d="M35.1033 1.81699C35.4701 1.07374 36.5299 1.07374 36.8967 1.81699L38.7063 5.48347C38.8519 5.77862 39.1335 5.98319 39.4592 6.03051L43.5054 6.61846C44.3256 6.73765 44.6531 7.74562 44.0596 8.32416L41.1318 11.1781C40.8961 11.4079 40.7885 11.7389 40.8442 12.0632L41.5353 16.0931C41.6754 16.91 40.818 17.533 40.0844 17.1473L36.4653 15.2446C36.174 15.0915 35.826 15.0915 35.5347 15.2446L31.9156 17.1473C31.182 17.533 30.3246 16.91 30.4647 16.0931L31.1558 12.0632C31.2115 11.7389 31.1039 11.4079 30.8682 11.1781L27.9404 8.32416C27.3469 7.74562 27.6744 6.73765 28.4946 6.61846L32.5408 6.03051C32.8665 5.98319 33.1481 5.77862 33.2937 5.48347L35.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M61.1033 1.81699C61.4701 1.07374 62.5299 1.07374 62.8967 1.81699L64.7063 5.48347C64.8519 5.77862 65.1335 5.98319 65.4592 6.03051L69.5054 6.61846C70.3256 6.73765 70.6531 7.74562 70.0596 8.32416L67.1318 11.1781C66.8961 11.4079 66.7885 11.7389 66.8442 12.0632L67.5353 16.0931C67.6754 16.91 66.818 17.533 66.0844 17.1473L62.4653 15.2446C62.174 15.0915 61.826 15.0915 61.5347 15.2446L57.9156 17.1473C57.182 17.533 56.3246 16.91 56.4647 16.0931L57.1558 12.0632C57.2115 11.7389 57.1039 11.4079 56.8682 11.1781L53.9404 8.32416C53.3469 7.74562 53.6744 6.73765 54.4946 6.61846L58.5408 6.03051C58.8665 5.98319 59.1481 5.77862 59.2937 5.48347L61.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M87.1033 1.81699C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.7063 5.48347C90.8519 5.77862 91.1335 5.98319 91.4592 6.03051L95.5054 6.61846C96.3256 6.73765 96.6531 7.74562 96.0596 8.32416L93.1318 11.1781C92.8961 11.4079 92.7885 11.7389 92.8442 12.0632L93.5353 16.0931C93.6754 16.91 92.818 17.533 92.0844 17.1473L88.4653 15.2446C88.174 15.0915 87.826 15.0915 87.5347 15.2446L83.9156 17.1473C83.182 17.533 82.3246 16.91 82.4647 16.0931L83.1558 12.0632C83.2115 11.7389 83.1039 11.4079 82.8682 11.1781L79.9404 8.32416C79.3469 7.74562 79.6744 6.73765 80.4946 6.61846L84.5408 6.03051C84.8665 5.98319 85.1481 5.77862 85.2937 5.48347L87.1033 1.81699Z" fill="#2D2D2D" />
+                    <path d="M113.103 1.81699C113.47 1.07374 114.53 1.07374 114.897 1.81699L116.706 5.48347C116.852 5.77862 117.133 5.98319 117.459 6.03051L121.505 6.61846C122.326 6.73765 122.653 7.74562 122.06 8.32416L119.132 11.1781C118.896 11.4079 118.789 11.7389 118.844 12.0632L119.535 16.0931C119.675 16.91 118.818 17.533 118.084 17.1473L114.465 15.2446C114.174 15.0915 113.826 15.0915 113.535 15.2446L109.916 17.1473C109.182 17.533 108.325 16.91 108.465 16.0931L109.156 12.0632C109.211 11.7389 109.104 11.4079 108.868 11.1781L105.94 8.32416C105.347 7.74562 105.674 6.73765 106.495 6.61846L110.541 6.03051C110.867 5.98319 111.148 5.77862 111.294 5.48347L113.103 1.81699Z" fill="#2D2D2D" />
+                  </svg>
+                  <div>
+                    <p className="text-md">Gemma Nolen</p>
+                    <p className="text-sm text-gray-500">Google</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </SwiperSlide>
 
-        </div>
+
+        </Swiper>
+
       </section>
 
 
